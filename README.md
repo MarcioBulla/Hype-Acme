@@ -1,13 +1,23 @@
 # Hype-Acme
-Codigo Fonte para soluções dos problemas indicados pelo PS na Hype.
+Código Fonte para soluções dos problemas indicados pelo PS na Hype.
 
 # Recomendações
+- docker compose
 - Python 3.10;
 - Instalar bibliotecas necessárias em `requirements.txt`;
 - Utilize ambiente virtual `vitualenv`.
 
 ## Instruções
 Tutorial para preparar o ambiente e executar os notebooks.
+
+### Execução do docker compose
+```bash
+docker compose up -d
+```
+ou
+```bash
+docker-compose up -d
+```
 
 ### Linux
 - Instale o `virtualenv`;
@@ -34,4 +44,4 @@ Tutorial para preparar o ambiente e executar os notebooks.
     ```bash
     jupyter-kernelspec list
     ```
-    deve aparecer o kernel que criou.
+    deve aparecer o kernel que foi criou.
