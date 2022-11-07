@@ -1,6 +1,12 @@
 # Hype-Acme
 Código Fonte para soluções dos problemas indicados pelo PS na Hype.
 
+> O Documento `solution.ipynb` contem todos as respostas.
+
+> NOTA: todos manuseio de `TABLES` foram feitos através da linguagem SQL, seguindo orientação das questões!. Utilizei o ambiente Jupyter apenas para uma melhor aprestação dos dados.
+
+
+
 # Recomendações
 - docker compose
 - Python 3.10;
