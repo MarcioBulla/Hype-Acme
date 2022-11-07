@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+    import:
+        container_name: "import"
+        build: 
+            context: "."
+            dockerfile: "dockerfile/python.dockerfile"
+        command: sh -c "sleep 20s ; python3 import_data.py"
+        links: 
+            - mydb
+        depends_on:
+            - mydb
+        networks:
+            - app-net
+
+    mydb:
+        container_name: "mydb"
+        image: "mysql:latest"
+        environment:
+            MYSQL_ROOT_PASSWORD: "acme"
+        ports:
+            - "3306:3306"
+        networks:
+            - app-net
+
+networks:
+    app-net:
+        driver: bridge
+
