@@ -12,6 +12,7 @@ services:
             - mydb
         networks:
             - app-net
+        restart: on-failure
 
     mydb:
         container_name: "mydb"
