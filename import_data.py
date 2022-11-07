@@ -39,7 +39,7 @@ engine_1 = create_engine(
     "mysql+mysqlconnector://root:acme@"+host+":3306/ibge")
 engine_23 = create_engine(
     "mysql+mysqlconnector://root:acme@"+host+":3306/service")
-i
+
 cursor_1 = engine_1.connect()
 cursor_23 = engine_23.connect()
 
