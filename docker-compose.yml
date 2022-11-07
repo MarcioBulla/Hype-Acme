@@ -3,8 +3,8 @@ services:
     import:
         container_name: "import"
         build: 
-            context: "."
-            dockerfile: "dockerfile/python.dockerfile"
+            context: "./app"
+            dockerfile: "python.dockerfile"
         command: sh -c "sleep 20s ; python3 import_data.py"
         links: 
             - mydb
