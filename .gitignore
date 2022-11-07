@@ -1,2 +1,8 @@
+# DIR
 Hype/
 data/
+.ipynb_checkpoints/
+.vscode
+
+# FILES
+diagram-ER.pdf
