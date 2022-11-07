@@ -5,12 +5,14 @@ Código Fonte para soluções dos problemas indicados pelo PS na Hype.
 - docker compose
 - Python 3.10;
 - Instalar bibliotecas necessárias em `requirements.txt`;
-- Utilize ambiente virtual `vitualenv`.
+- Utilize ambiente virtual `virtualenv`.
 
 ## Instruções
-Tutorial para preparar o ambiente e executar os notebooks.
+Testar aplicação
 
 ### Execução do docker compose
+Primeiro deve construir o container com os `DATABASES` e `TABLES`. Para isso usaremos o `docker compose`:
+
 ```bash
 docker compose up -d
 ```
@@ -18,8 +20,10 @@ ou
 ```bash
 docker-compose up -d
 ```
-
+Ele criara 2 container um `MySQL:latest` e outro `Python:3.10`. O container de Python irá baixar e imputar os dados no container `MySQL`, para que possamos utiliza-las em nossas analises.
 ### Linux
+Com os contêiner iniciados podemos acessar o container do `MySQL` para fazer nossas analises.
+
 - Instale o `virtualenv`;
     ```bash
     pip install virtualenv
