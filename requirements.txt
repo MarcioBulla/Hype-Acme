@@ -1,3 +1,4 @@
+ipykernel
 mysql-connector-python
 sqlalchemy
 pandas
